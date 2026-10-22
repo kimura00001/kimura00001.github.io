@@ -194,19 +194,22 @@ section { padding: clamp(72px, 11vw, 128px) var(--gutter); }
 .board-news time { margin-right: 10px; color: #f0a6a0; }
 .chalk { position: absolute; right: 18px; bottom: -6px; width: 46px; height: 10px; background: #fff; border-radius: 3px; transform: rotate(-6deg); opacity: .85; }
 
-.menu-section + .menu-section {
-  margin-top: clamp(56px, 9vw, 88px); padding-top: clamp(40px, 6vw, 56px);
-  border-top: 3px double rgba(242, 232, 210, .35);
+.menu-tabs { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 36px; }
+.menu-tabs button {
+  padding: 8px 20px; border: 0; cursor: pointer;
+  background: var(--paper-2); color: var(--ink);
+  font-family: var(--serif); font-weight: 900; font-size: 15px; letter-spacing: .15em;
+  box-shadow: 0 4px 0 var(--wood-dark); transition: transform .15s, background .15s;
 }
-.section-label {
-  display: block; width: fit-content; margin: 0 auto 14px; padding: 6px 28px;
-  background: var(--mustard); color: var(--ink);
-  font-family: var(--serif); font-weight: 900; font-size: clamp(20px, 3vw, 26px); letter-spacing: .3em;
-  box-shadow: 0 5px 0 var(--wood-dark); transform: rotate(-1.5deg);
-}
+.menu-tabs button:hover { transform: translateY(-2px); }
+.menu-tabs button[aria-selected="true"] { background: var(--red); color: var(--paper); }
+.menu-tabs button.is-ura { background: var(--ink); color: var(--mustard); }
+.menu-tabs button.is-ura[aria-selected="true"] { background: var(--mustard); color: var(--ink); }
+
+.menu-panel { animation: fade .35s ease; }
+@keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 .panel-lead { text-align: center; font-family: var(--serif); font-weight: 900; font-size: clamp(17px, 2.4vw, 21px); letter-spacing: .1em; margin-bottom: 24px; color: var(--mustard); }
 
-.menu-group + .menu-group { margin-top: clamp(24px, 4vw, 36px); }
 .tanzaku { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: clamp(10px, 1.8vw, 16px); }
 .tanzaku li {
   --tilt: 0deg;
