@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://www.youtube-nocookie.com; connect-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#141518">
@@ -31,10 +31,11 @@
   </a>
   <button class="nav-toggle" id="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav-menu"><span></span></button>
   <ul id="nav-menu">
-    <li><a href="#setting">セッティング</a></li>
     <li><a href="#service">取扱業務</a></li>
     <li><a href="#price">料金</a></li>
-    <li><a href="#original">オリジナル商品</a></li>
+    <li><a href="#bikes">在庫車両</a></li>
+    <li><a href="blog.html">作業ブログ</a></li>
+    <li><a href="setting.html">セッティングとは？</a></li>
     <li><a href="#access">店舗情報</a></li>
     <li><a href="#contact" class="nav-cta">お問い合わせ</a></li>
   </ul>
@@ -54,30 +55,30 @@
 
     <figure class="dyno" aria-label="シャーシダイナモの計測グラフ（イメージ）">
       <div class="dyno-head">
-        <span>DYNO RUN #07</span><span class="rec">● REC</span>
+        <span>DYNO RUN #07 ／ PANIGALE V4 R</span><span class="rec">● REC</span>
       </div>
       <svg viewBox="0 0 400 260" class="dyno-chart" aria-hidden="true">
         <g class="dyno-grid">
-          <path d="M40 20 V220 M100 20 V220 M160 20 V220 M220 20 V220 M280 20 V220 M340 20 V220 M40 220 H380 M40 170 H380 M40 120 H380 M40 70 H380 M40 20 H380"/>
+          <path d="M40 20 V220 M95 20 V220 M150 20 V220 M205 20 V220 M260 20 V220 M315 20 V220 M370 20 V220 M40 220 H380 M40 170 H380 M40 120 H380 M40 70 H380 M40 20 H380"/>
         </g>
         <g class="dyno-axis">
-          <text x="40" y="240">2</text><text x="100" y="240">4</text><text x="160" y="240">6</text><text x="220" y="240">8</text><text x="280" y="240">10</text><text x="340" y="240">12</text>
-          <text x="380" y="240" text-anchor="end">×1000rpm</text>
+          <text x="40" y="240">4</text><text x="95" y="240">6</text><text x="150" y="240">8</text><text x="205" y="240">10</text><text x="260" y="240">12</text><text x="315" y="240">14</text><text x="370" y="240">16</text>
+          <text x="380" y="256" text-anchor="end">×1000rpm</text>
         </g>
-        <path class="curve before" d="M40 200 C90 180 130 150 170 128 C200 112 215 120 240 100 C280 80 310 78 350 84 L370 92"/>
-        <path class="curve torque" d="M40 120 C80 92 120 80 160 78 C200 76 240 74 280 82 C310 88 340 104 370 120"/>
-        <path class="curve power" d="M40 196 C90 172 130 140 170 116 C210 92 250 66 290 52 C320 44 345 44 370 52"/>
+        <path class="curve before" d="M40 204 C90 186 130 160 170 140 C200 124 215 134 240 112 C280 84 320 70 356 66 L370 74"/>
+        <path class="curve torque" d="M40 132 C80 108 130 94 180 88 C215 84 240 76 260 74 C290 74 320 84 345 98 C355 104 365 110 370 114"/>
+        <path class="curve power" d="M40 200 C90 176 130 146 170 120 C210 94 250 70 290 54 C320 42 340 38 356 38 C362 38 366 41 370 46"/>
         <path class="curve afr" d="M40 160 C70 150 90 166 120 150 C150 140 170 146 200 144 C240 142 280 146 320 144 C340 143 360 145 370 144"/>
       </svg>
       <figcaption class="dyno-legend">
         <span class="l-power">POWER</span><span class="l-torque">TORQUE</span><span class="l-afr">A/F</span><span class="l-before">BEFORE</span>
       </figcaption>
       <div class="dyno-read">
-        <div><small>MAX POWER</small><b>+8.4<i>PS</i></b></div>
-        <div><small>A/F</small><b>13.2</b></div>
-        <div><small>MAP</small><b>250<i>rpm</i></b></div>
+        <div><small>MAX POWER</small><b>218<i>PS</i></b><small>@15,500rpm</small></div>
+        <div><small>MAX TORQUE</small><b>111.3<i>Nm</i></b><small>@12,000rpm</small></div>
+        <div><small>A/F</small><b>13.0</b><small>TARGET</small></div>
       </div>
-      <p class="dyno-cap">※ グラフはイメージです</p>
+      <p class="dyno-cap">※ グラフはイメージです（数値はパニガーレV4Rの公称値を参考）</p>
     </figure>
   </div>
 </header>
@@ -108,7 +109,23 @@
         <li>サーキット走行会に参加してみたい</li>
         <li>ツーリングであちこち旅したい！</li>
       </ul>
-      <p>ベテランから初心者、女性ライダーまで丁寧にご説明します。<b>一見さんも二見さんも大歓迎。</b></p>
+      <p>ベテランから初心者、女性ライダーまで丁寧にご説明します。当店で購入していないバイクも喜んで整備します。<b>一見さんも二見さんも大歓迎。</b></p>
+    </div>
+
+    <div class="learn">
+      <a class="learn-card reveal" href="setting.html">
+        <span class="learn-kicker">READING ／ 全9話</span>
+        <b>セッティングで本当に変わるのか？</b>
+        <span>空燃比の基本から、新車の燃調、夏と冬の違い、よくある都市伝説まで。セッティングに迷っている方へ。</span>
+        <span class="learn-go">読んでみる →</span>
+      </a>
+      <div class="video reveal" data-module="video"></div>
+    </div>
+
+    <div class="blog reveal">
+      <h3>作業ブログ</h3>
+      <p>実際の作業の様子を、セッティング前後の数値と一緒に紹介しています。</p>
+      <div data-module="latest"></div>
     </div>
   </div>
 </section>
@@ -161,19 +178,16 @@
         <div><dt>カラー</dt><dd>レッド・ゴールド・グリーン（白文字）は＋3,000円（税抜）／1枚</dd></div>
         <div><dt>対応車種</dt><dd>ZRX1200R／ゼファー1100／ゼファー750／GPZ900R（320φ・310φ）、ZRX1200DAEG（310φ）</dd></div>
       </dl>
-      <p class="small">その他の車種・カラーも製作可能です。当店はサンスター販売元「国美コマース」様の正規代理店です。</p>
+      <p class="small">その他の車種・カラーも製作可能です。当店はサンスター販売元「国美コマース」様の正規代理店で、フローティングピンの組み込みはすべて国美コマース様にお願いしています。</p>
+      <p class="original-links"><a class="btn btn-primary" href="#contact">注文・問い合わせ</a><a class="btn btn-ghost" href="https://www.sunstar-kc.jp/product-information/discrotor/premium-racing/" target="_blank" rel="noopener">サンスター製品ページ<span class="ext" aria-hidden="true">↗</span></a></p>
     </div>
   </div>
 </section>
 
-<section class="stock">
-  <div class="wrap stock-inner reveal">
-    <div>
-      <span class="en">BIKES FOR SALE</span>
-      <h2>販売車両</h2>
-      <p>在庫車両はGooBikeに掲載しています。業者オークション代行で、全国からお探しすることもできます。</p>
-    </div>
-    <a class="btn btn-primary" data-bind-href="stockUrl" href="https://www.goobike.com/shop/client_8710031/showroom.html" target="_blank" rel="noopener">在庫車両を見る<span class="ext" aria-label="（別サイト）">↗</span></a>
+<section class="bikes" id="bikes">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="en">BIKES FOR SALE</span><h2>在庫車両</h2></div>
+    <div data-module="bikes"></div>
   </div>
 </section>
 
@@ -182,16 +196,21 @@
     <div class="sec-head reveal"><span class="en">CONTACT</span><h2>お問い合わせ</h2></div>
     <p class="sec-lead reveal">お急ぎの方はお電話がスムーズです。<br class="pc">LINEならそのまま内容を送っていただいてOKです。</p>
     <div class="contact-grid">
-      <a class="contact-card tel reveal" data-bind-href="tel" href="tel:0728132007">
+      <a class="contact-card tel reveal" data-bind-href="tel" href="#">
         <span class="cc-label">電話で相談</span>
-        <b class="num" data-bind="tel">072-813-2007</b>
+        <b class="num" data-bind="tel">000-0000-0000</b>
         <span class="cc-sub"><span data-bind="hours">11:00 – 20:00</span>／<span data-bind="holiday">毎週木曜日</span>定休</span>
       </a>
-      <a class="contact-card line reveal" data-bind-href="lineUrl" href="https://line.me/R/ti/p/@ruj8346n" target="_blank" rel="noopener">
+      <a class="contact-card line reveal" data-bind-href="lineUrl" href="#">
         <span class="cc-label">LINEで相談</span>
-        <b class="num" data-bind="lineId">@ruj8346n</b>
+        <b class="num" data-bind="lineId">@sample-id</b>
         <span class="cc-sub">友だち追加してメッセージを送信</span>
       </a>
+    </div>
+    <div class="form-wrap reveal">
+      <h3>フォームから相談する</h3>
+      <p>入力した内容を LINE でそのまま送れます（デモ中は送信されません）。<span class="pc-inline">スマホなら LINE アプリが開きます。</span></p>
+      <div data-module="contact"></div>
     </div>
     <p class="contact-note reveal">※ 車両の引き上げやダイナモ運転中など、電話に出られないことがあります。お手数ですが時間をおいて再度おかけいただくか、LINEでご連絡ください。</p>
   </div>
@@ -203,7 +222,7 @@
       <div class="sec-head left"><span class="en">ACCESS</span><h2>店舗情報</h2></div>
       <div data-module="access"></div>
     </div>
-    <a class="map reveal" data-bind-href="mapUrl" href="https://www.google.com/maps/search/?api=1&amp;query=34.7802021,135.6144312" target="_blank" rel="noopener">
+    <a class="map reveal" data-bind-href="mapUrl" href="#">
       <svg viewBox="0 0 400 300" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
         <rect width="400" height="300" fill="#1d1f23"/>
         <g stroke="#2c2f35" stroke-width="14" fill="none">
@@ -225,18 +244,18 @@
 
 <footer>
   <div class="foot-logo" data-bind="nameEn">BIKE SETTING SERVICE</div>
-  <p><span data-bind="zip">〒572-0073</span> <span data-bind="address">大阪府寝屋川市池田北町20-3</span></p>
-  <p class="foot-links"><a data-bind-href="blogUrl" href="http://zenmaiss.blog.fc2.com/" target="_blank" rel="noopener">作業ブログ↗</a><a href="#top">ページの先頭へ</a></p>
-  <p class="copy">© <span data-bind="company">株式会社ゼンマイ</span></p>
+  <p><span data-bind="zip">〒000-0000</span> <span data-bind="address">大阪府寝屋川市〇〇町0-0-0</span></p>
+  <p class="foot-links"><a href="blog.html">作業ブログ</a><a data-bind-href="facebookUrl" href="#">Facebook↗</a><a href="setting.html">セッティングとは？</a><a href="#top">ページの先頭へ</a></p>
+  <p class="copy">© <span data-bind="company">株式会社〇〇〇〇</span></p>
   <p class="demo">このサイトはリニューアル提案用のデモです。</p>
 </footer>
 
 <div class="callbar" aria-label="すぐに連絡">
-  <a data-bind-href="tel" href="tel:0728132007"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>電話</a>
-  <a data-bind-href="lineUrl" href="https://line.me/R/ti/p/@ruj8346n" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5 1.1-.5 5.9-3.5 8-6C21.3 14.2 22 12.7 22 11c0-4.4-4.5-8-10-8z"/></svg>LINE</a>
+  <a data-bind-href="tel" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>電話</a>
+  <a data-bind-href="lineUrl" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5 1.1-.5 5.9-3.5 8-6C21.3 14.2 22 12.7 22 11c0-4.4-4.5-8-10-8z"/></svg>LINE</a>
   <a href="#access"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>アクセス</a>
 </div>
 
-<noscript><link rel="stylesheet" href="css/noscript.css"><p class="noscript">取扱業務・料金・店舗情報の表示には JavaScript を有効にしてください。お問い合わせは 072-813-2007 まで。</p></noscript>
+<noscript><link rel="stylesheet" href="css/noscript.css"><p class="noscript">取扱業務・料金・店舗情報の表示には JavaScript を有効にしてください。お問い合わせは 000-0000-0000 まで。</p></noscript>
 </body>
 </html>

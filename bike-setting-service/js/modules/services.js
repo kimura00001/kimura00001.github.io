@@ -1,6 +1,8 @@
 // 取扱業務：番号付きのカード。スマホでは開閉式（data/services.json）
 import { h, render } from '../lib/dom.js';
 
+const link = l => h('a', { class: 'svc-link', href: l.href, target: '_blank', rel: 'noopener' }, l.label, h('span', { 'aria-hidden': 'true' }, ' ↗'));
+
 function card(s, i) {
   return h('details', { class: 'svc', id: `svc-${s.id}`, open: i === 0 ? true : null },
     h('summary', {},
@@ -10,8 +12,9 @@ function card(s, i) {
     ),
     h('div', { class: 'svc-body' },
       h('p', { class: 'svc-lead' }, s.lead),
-      h('dl', {}, s.items.map(it => [h('dt', {}, it.name), h('dd', {}, it.text)])),
+      h('dl', {}, s.items.map(it => [h('dt', {}, it.name), h('dd', {}, it.text, it.link && link(it.link))])),
       s.tag && h('span', { class: 'svc-tag' }, s.tag),
+      s.link && h('a', { class: 'svc-more', href: s.link.href }, s.link.label, h('span', { 'aria-hidden': 'true' }, ' →')),
     ),
   );
 }
