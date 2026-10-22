@@ -1,0 +1,28 @@
+/* 色・フォントの定義。ここを変えるだけで全体の雰囲気を差し替えられる。 */
+:root {
+  --paper: #f2e8d2;      /* 生成り */
+  --paper-2: #e8d8b6;
+  --paper-3: #fbf5e6;
+  --ink: #2b211b;        /* 墨 */
+  --ink-soft: #5b4a3d;
+  --red: #b5322a;        /* 朱 */
+  --red-deep: #8e231d;
+  --navy: #1e3046;       /* 藍 */
+  --navy-2: #2a4160;
+  --mustard: #d8a033;    /* 芥子 */
+  --green: #3f6b4f;      /* タイル */
+  --wood: #6e4a2e;
+  --wood-dark: #4a301c;
+  --chalk-board: #2d3a32;
+  --chalk: #f3efe2;
+  --chalk-yellow: #f6d36b;
+  --line: rgba(43, 33, 27, .2);
+
+  --display: "Dela Gothic One", "Hiragino Sans", sans-serif;
+  --serif: "Zen Old Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --sans: "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", sans-serif;
+  --hand: "Klee One", "Zen Kaku Gothic New", sans-serif;
+
+  --gutter: clamp(16px, 4vw, 40px);
+  --nav-h: 56px;
+}

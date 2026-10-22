@@ -1,0 +1,9 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #f2e8d2; color: #2b211b; font-family: "Hiragino Sans", "Yu Gothic", sans-serif; }
+main { max-width: 640px; margin: 0 auto; padding: 64px 16px; }
+h1 { font-size: 28px; letter-spacing: .1em; margin-bottom: 24px; border-bottom: 3px solid #b5322a; padding-bottom: 8px; }
+ul { list-style: none; display: grid; gap: 12px; }
+a { display: block; padding: 16px 20px; background: #fbf5e6; border: 2px solid #2b211b; box-shadow: 4px 4px 0 #2b211b; color: inherit; text-decoration: none; }
+a:hover { transform: translate(1px, 1px); box-shadow: 3px 3px 0 #2b211b; }
+b { display: block; font-size: 18px; }
+span { font-size: 13px; color: #5b4a3d; }
