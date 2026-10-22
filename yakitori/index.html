@@ -37,6 +37,40 @@
     <rect x="28" y="152" width="44" height="12" rx="2" fill="#2b211b"/>
     <line x1="50" y1="164" x2="50" y2="180" stroke="#d8a033" stroke-width="4"/>
   </symbol>
+  <symbol id="mascot" viewBox="0 0 220 210">
+    <g stroke="#2b211b" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+      <!-- tail -->
+      <path d="M160 120 L198 92 L188 122 L206 128 L176 150 Z" fill="#fffaf0"/>
+      <!-- comb -->
+      <circle cx="80" cy="56" r="15" fill="#b5322a"/>
+      <circle cx="100" cy="46" r="18" fill="#b5322a"/>
+      <circle cx="121" cy="56" r="15" fill="#b5322a"/>
+      <!-- feet -->
+      <path d="M78 178 v18 m-9 0 h18 M122 178 v18 m-9 0 h18" fill="none" stroke="#d8a033" stroke-width="6"/>
+      <!-- body -->
+      <ellipse cx="100" cy="122" rx="72" ry="64" fill="#fffaf0"/>
+      <!-- headband -->
+      <path d="M33 98 Q100 74 167 98" fill="none" stroke="#1e3046" stroke-width="16" stroke-linecap="butt"/>
+      <path d="M160 92 L182 78 L178 98 Z M162 100 L186 106 L170 116 Z" fill="#1e3046"/>
+      <!-- eyes -->
+      <circle cx="78" cy="118" r="7" fill="#2b211b" stroke="none"/>
+      <circle cx="80" cy="115" r="2.2" fill="#fff" stroke="none"/>
+      <path d="M112 119 Q121 109 130 119" fill="none"/>
+      <!-- blush -->
+      <ellipse cx="62" cy="138" rx="11" ry="6" fill="#f29a8a" stroke="none" opacity=".85"/>
+      <ellipse cx="136" cy="138" rx="11" ry="6" fill="#f29a8a" stroke="none" opacity=".85"/>
+      <!-- beak + wattle -->
+      <path d="M88 128 L112 128 L100 146 Z" fill="#d8a033"/>
+      <path d="M100 146 q-9 6 -4 16 q9 2 9 -9" fill="#b5322a" stroke-width="4"/>
+      <!-- skewer -->
+      <line x1="146" y1="170" x2="196" y2="40" stroke="#c9a46a" stroke-width="5"/>
+      <rect x="168" y="52" width="26" height="20" rx="7" fill="#b0622c" transform="rotate(21 181 62)"/>
+      <rect x="164" y="76" width="22" height="12" rx="4" fill="#7d9a3c" transform="rotate(21 175 82)"/>
+      <rect x="157" y="92" width="26" height="20" rx="7" fill="#b0622c" transform="rotate(21 170 102)"/>
+      <!-- wing -->
+      <path d="M140 160 Q150 130 172 128 Q178 150 156 170 Z" fill="#fffaf0"/>
+    </g>
+  </symbol>
 </svg>
 
 <nav class="nav" id="nav">
@@ -55,7 +89,11 @@
   <div class="hero-body">
     <svg class="lantern lantern-l" aria-hidden="true"><use href="#lantern"/></svg>
     <svg class="lantern lantern-r" aria-hidden="true"><use href="#lantern"/></svg>
-    <div class="stamp" aria-hidden="true">立呑<br>処</div>
+    <div class="mascot-wrap" aria-hidden="true">
+      <svg class="mascot"><use href="#mascot"/></svg>
+      <span class="bubble">らっしゃい！</span>
+      <span class="stamp">立呑<br>処</span>
+    </div>
     <p class="hero-sub" data-bind="area">大阪・ミナミ</p>
     <h1 data-bind="name">ヤキトリオミセ</h1>
     <p class="lead" data-bind="catch">仕事帰りに、ふらっと一杯。</p>
@@ -162,6 +200,7 @@
 
 <section class="cta">
   <div class="wrap reveal">
+    <svg class="mascot mascot-cta" aria-hidden="true"><use href="#mascot"/></svg>
     <p class="big">今日の一杯は、<br>炭の香りと。</p>
     <a class="btn" href="#info">店舗情報をみる</a>
   </div>
