@@ -37,38 +37,56 @@
     <rect x="28" y="152" width="44" height="12" rx="2" fill="#2b211b"/>
     <line x1="50" y1="164" x2="50" y2="180" stroke="#d8a033" stroke-width="4"/>
   </symbol>
-  <symbol id="mascot" viewBox="0 0 220 210">
-    <g stroke="#2b211b" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
-      <!-- tail -->
-      <path d="M160 120 L198 92 L188 122 L206 128 L176 150 Z" fill="#fffaf0"/>
-      <!-- comb -->
-      <circle cx="80" cy="56" r="15" fill="#b5322a"/>
-      <circle cx="100" cy="46" r="18" fill="#b5322a"/>
-      <circle cx="121" cy="56" r="15" fill="#b5322a"/>
-      <!-- feet -->
-      <path d="M78 178 v18 m-9 0 h18 M122 178 v18 m-9 0 h18" fill="none" stroke="#d8a033" stroke-width="6"/>
-      <!-- body -->
-      <ellipse cx="100" cy="122" rx="72" ry="64" fill="#fffaf0"/>
-      <!-- headband -->
-      <path d="M33 98 Q100 74 167 98" fill="none" stroke="#1e3046" stroke-width="16" stroke-linecap="butt"/>
-      <path d="M160 92 L182 78 L178 98 Z M162 100 L186 106 L170 116 Z" fill="#1e3046"/>
-      <!-- eyes -->
-      <circle cx="78" cy="118" r="7" fill="#2b211b" stroke="none"/>
-      <circle cx="80" cy="115" r="2.2" fill="#fff" stroke="none"/>
-      <path d="M112 119 Q121 109 130 119" fill="none"/>
-      <!-- blush -->
-      <ellipse cx="62" cy="138" rx="11" ry="6" fill="#f29a8a" stroke="none" opacity=".85"/>
-      <ellipse cx="136" cy="138" rx="11" ry="6" fill="#f29a8a" stroke="none" opacity=".85"/>
-      <!-- beak + wattle -->
-      <path d="M88 128 L112 128 L100 146 Z" fill="#d8a033"/>
-      <path d="M100 146 q-9 6 -4 16 q9 2 9 -9" fill="#b5322a" stroke-width="4"/>
-      <!-- skewer -->
-      <line x1="146" y1="170" x2="196" y2="40" stroke="#c9a46a" stroke-width="5"/>
-      <rect x="168" y="52" width="26" height="20" rx="7" fill="#b0622c" transform="rotate(21 181 62)"/>
-      <rect x="164" y="76" width="22" height="12" rx="4" fill="#7d9a3c" transform="rotate(21 175 82)"/>
-      <rect x="157" y="92" width="26" height="20" rx="7" fill="#b0622c" transform="rotate(21 170 102)"/>
-      <!-- wing -->
-      <path d="M140 160 Q150 130 172 128 Q178 150 156 170 Z" fill="#fffaf0"/>
+  <symbol id="mascot" viewBox="0 0 240 240">
+    <defs>
+      <clipPath id="emblem-inner"><circle cx="120" cy="120" r="84"/></clipPath>
+      <pattern id="halftone" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(30)">
+        <circle cx="3" cy="3" r="1.4" fill="#2b211b"/>
+      </pattern>
+      <path id="arc-top" d="M28 120 A92 92 0 0 1 212 120"/>
+      <path id="arc-bottom" d="M22 120 A98 98 0 0 0 218 120"/>
+    </defs>
+    <!-- print shadow + ring -->
+    <circle cx="125" cy="125" r="112" fill="#2b211b"/>
+    <circle cx="120" cy="120" r="112" fill="#b5322a" stroke="#2b211b" stroke-width="4"/>
+    <circle cx="120" cy="120" r="104" fill="none" stroke="#f2e8d2" stroke-width="1.5" stroke-dasharray="2 4"/>
+    <text font-family="Dela Gothic One, sans-serif" font-size="13" fill="#f2e8d2" letter-spacing="1.5">
+      <textPath href="#arc-top" startOffset="50%" text-anchor="middle">TACHINOMI YAKITORI</textPath>
+    </text>
+    <text font-family="Zen Old Mincho, serif" font-weight="900" font-size="18" fill="#f2e8d2" letter-spacing="6">
+      <textPath href="#arc-bottom" startOffset="50%" text-anchor="middle">炭火 ・ 串焼</textPath>
+    </text>
+    <text x="20" y="126" font-size="14" fill="#d8a033" text-anchor="middle">★</text>
+    <text x="220" y="126" font-size="14" fill="#d8a033" text-anchor="middle">★</text>
+    <!-- inner field -->
+    <circle cx="120" cy="120" r="84" fill="#f2e8d2" stroke="#2b211b" stroke-width="4"/>
+    <g clip-path="url(#emblem-inner)">
+      <circle cx="120" cy="150" r="60" fill="none" stroke="#d8a033" stroke-width="140" stroke-dasharray="7.85 7.85" opacity=".35"/>
+      <circle cx="122" cy="108" r="34" fill="#d8a033" opacity=".55"/>
+      <g stroke="#2b211b" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round" transform="translate(6 0)">
+        <!-- tail -->
+        <path d="M148 128 C170 70 214 66 214 112 C202 92 180 98 160 138 Z" fill="#1e3046"/>
+        <path d="M150 136 C184 98 224 112 210 154 C198 130 178 130 160 148 Z" fill="#3f6b4f"/>
+        <path d="M148 146 C180 134 206 152 194 182 C186 162 170 156 152 160 Z" fill="#1e3046"/>
+        <!-- legs -->
+        <path d="M100 186 L97 210 M88 212 L104 212 M120 186 L123 210 M114 212 L130 212" fill="none" stroke="#d8a033" stroke-width="5"/>
+        <!-- comb + wattle (misregistered red under) -->
+        <path d="M80 62 C77 51 84 45 88 51 C88 41 97 39 98 49 C100 41 109 43 106 53 C111 51 115 58 108 64 Z" fill="#b5322a" transform="translate(2 2)" stroke="none" opacity=".5"/>
+        <path d="M80 62 C77 51 84 45 88 51 C88 41 97 39 98 49 C100 41 109 43 106 53 C111 51 115 58 108 64 Z" fill="#b5322a"/>
+        <!-- head + body -->
+        <path d="M78 160 C62 135 68 112 76 98 C70 84 72 66 86 60 C100 54 114 64 112 82 C110 94 104 102 108 112 C130 108 158 122 162 150 C165 178 135 196 105 192 C90 190 84 176 78 160 Z" fill="#fbf5e6"/>
+        <path d="M78 160 C84 176 90 190 105 192 C135 196 165 178 162 150 C150 170 110 178 78 160 Z" fill="url(#halftone)" stroke="none" opacity=".55"/>
+        <!-- neck hackles -->
+        <path d="M80 100 q4 8 0 14 M88 102 q4 8 0 14 M96 104 q4 8 0 14" fill="none" stroke-width="2.5"/>
+        <!-- beak, wattle, eye -->
+        <path d="M76 71 L58 78 L76 84 Z" fill="#d8a033"/>
+        <path d="M78 86 C71 93 74 105 82 101 C87 97 85 90 82 86 Z" fill="#b5322a"/>
+        <circle cx="89" cy="72" r="4.5" fill="#2b211b" stroke="none"/>
+        <circle cx="90.5" cy="70.5" r="1.4" fill="#fff" stroke="none"/>
+        <!-- wing -->
+        <path d="M100 140 C110 122 142 124 152 146 C142 152 130 166 112 168 C103 162 97 152 100 140 Z" fill="#e8d8b6"/>
+        <path d="M108 150 q8 7 16 0 q8 7 16 0 M112 160 q8 7 16 0" fill="none" stroke-width="2.5"/>
+      </g>
     </g>
   </symbol>
 </svg>
@@ -91,8 +109,6 @@
     <svg class="lantern lantern-r" aria-hidden="true"><use href="#lantern"/></svg>
     <div class="mascot-wrap" aria-hidden="true">
       <svg class="mascot"><use href="#mascot"/></svg>
-      <span class="bubble">らっしゃい！</span>
-      <span class="stamp">立呑<br>処</span>
     </div>
     <p class="hero-sub" data-bind="area">大阪・ミナミ</p>
     <h1 data-bind="name">ヤキトリオミセ</h1>
