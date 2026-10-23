@@ -1,0 +1,8 @@
+[
+  { "icon": "x", "label": "X（旧Twitter）", "sub": "@nemuta_nui ・ 毎週金曜更新", "url": "https://x.com/" },
+  { "icon": "pixiv", "label": "pixiv", "sub": "1話からまとめて読めます", "url": "https://www.pixiv.net/" },
+  { "icon": "instagram", "label": "Instagram", "sub": "イラストとラフ", "url": "https://www.instagram.com/" },
+  { "icon": "youtube", "label": "YouTube", "sub": "モグのうごく町内放送", "url": "https://www.youtube.com/" },
+  { "icon": "shop", "label": "BOOTH", "sub": "グッズ・同人誌", "url": "https://booth.pm/" },
+  { "icon": "stamp", "label": "LINEスタンプ", "sub": "「いつもみてるよ」ほか40種", "url": "https://store.line.me/" }
+]
