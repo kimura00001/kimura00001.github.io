@@ -1,5 +1,5 @@
 // 登場人物。data/characters.json
-//  "art" はスプライトの id（mogu / chisato / mayor）か画像のパス
+//  "art" はスプライトの id（main / sub-a / sub-b）か画像のパス
 import { h, render } from '../lib/dom.js';
 import { art } from '../lib/art.js';
 

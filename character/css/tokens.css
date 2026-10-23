@@ -1,0 +1,20 @@
+/* 色・フォント。ここを変えるとサイト全体の雰囲気が変わる */
+:root {
+  --bg: #121116;        /* ページの背景 */
+  --bg-alt: #1a1920;    /* 1 つおきのセクション */
+  --surface: #23212b;   /* カード */
+  --line: #3a3646;      /* 線 */
+  --text: #e9e4da;
+  --text-soft: #8f899a;
+  --pale: #e9e4da;      /* キャラの白 */
+  --red: #b3362f;       /* 差し色 */
+  --dark: #0b0a0e;
+
+  --font-body: "Zen Maru Gothic", system-ui, sans-serif;
+  --font-title: "Kaisei Decol", "Zen Maru Gothic", serif;
+  --font-dot: "DotGothic16", monospace;
+
+  --radius: 18px;
+  --shadow: 0 14px 30px rgba(0, 0, 0, .45);
+  --wrap: 1080px;
+}

@@ -1,7 +1,7 @@
 // ちょっと不穏な演出まとめ。いらなければ registry.js から外すだけで全部止まる。
-//  - モグの目がマウス（スマホはスクロール位置）を追いかける
+//  - キャラの目がマウス（スマホはスクロール位置）を追いかける
 //  - ときどき見出しがノイズっぽく揺れて、キャッチコピーが一瞬だけ変わる
-//  - しばらく操作しないと、画面の右下からモグがのぞく
+//  - しばらく操作しないと、画面の右下からキャラがのぞく
 import { art, inline } from '../lib/art.js';
 
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -39,7 +39,7 @@ function glitches(catchText) {
       void el.offsetWidth;
       el.classList.add('glitch');
     }
-    if (catchEl && Math.random() < 0.35) {
+    if (catchEl && catchText && Math.random() < 0.35) {
       const original = catchEl.textContent;
       catchEl.textContent = catchText;
       setTimeout(() => { catchEl.textContent = original; }, 450);
@@ -52,7 +52,7 @@ function glitches(catchText) {
 function peek() {
   const el = document.querySelector('.peek');
   if (!el) return;
-  el.append(art('mogu'));
+  el.append(art('main'));
   let timer;
   const reset = () => {
     el.classList.remove('show');
@@ -67,10 +67,11 @@ export default {
   name: 'uneasy',
   global: true,
   late: true,
-  init() {
+  data: ['site'],
+  init(_, { site }) {
     followEyes();
     if (reduced) return;
-    glitches('ずっと いっしょに いるよ。');
+    glitches(site.whisper ?? '');
     peek();
   },
 };

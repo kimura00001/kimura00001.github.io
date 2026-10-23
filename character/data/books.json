@@ -1,10 +1,10 @@
 [
   {
-    "title": "ほほえみ町のモグ 2",
+    "title": "作品タイトル 2",
     "date": "2026年12月5日発売予定",
     "price": "1,100円（税込）",
-    "note": "描きおろし「モグのアルバム」収録。初回限定で、モグがしおりになって入っています。",
-    "color": "mint",
+    "note": "第13話〜第24話と描きおろしを収録。（ここに紹介文が入ります）",
+    "color": "red",
     "badge": "予約受付中",
     "shops": [
       { "label": "Amazon", "url": "https://www.amazon.co.jp/" },
@@ -12,11 +12,11 @@
     ]
   },
   {
-    "title": "ほほえみ町のモグ 1",
+    "title": "作品タイトル 1",
     "date": "2026年7月4日発売",
     "price": "1,100円（税込）",
-    "note": "第1話〜第12話と、描きおろし「はじめての町内会」を収録。",
-    "color": "pink",
+    "note": "第1話〜第12話と描きおろしを収録。（ここに紹介文が入ります）",
+    "color": "gray",
     "shops": [
       { "label": "Amazon", "url": "https://www.amazon.co.jp/" },
       { "label": "楽天ブックス", "url": "https://books.rakuten.co.jp/" }
